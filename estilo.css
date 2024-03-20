@@ -1,0 +1,124 @@
+*{margin: 0;}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10vw;
+    align-items: center;
+    animation-name: bajar;
+    animation-duration: 1s;
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+h1{
+    color: white;
+    
+}
+a{color: white;}
+A:hover{
+    text-decoration: underline red;
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo:hover > img{
+    transform: rotate(-30deg);
+    transition-duration: .5s;
+}
+
+#links{
+    display: flex;
+    column-gap: 10px;
+    font-style: italic;
+    font-size: medium;
+}
+#banner{
+    background-image: url('fondo.jpg');
+    height: 50vw;
+    width: 183.6vh;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: aparecer;
+    animation-duration: 1s;
+}
+
+@keyframes aparecer {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+h1 , h2{color: white;}
+
+#titulo{
+    font-size: 3rem;
+    background-color: black;
+    padding: 20px 8px;
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes girar{
+    0%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+#subtitulo{
+    font-size: 1.2rem;
+    background-color: #218ab6;
+}
+section{margin: 80px 120px;}
+
+.header{
+    height: 10vh;
+}
+.header>h1{
+    color: black;
+    font-size: 2.5rem;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.left,.right{
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.left>p,.right>p{
+    color: lightslategrey;
+    font-size: 1rem;
+    text-align: justify;
+}
+h6{
+    font-size: 2rem;
+}
